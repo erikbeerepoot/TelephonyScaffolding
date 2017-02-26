@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		03D982A71E6371E300BF8450 /* TMQTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03D982A61E6371E300BF8450 /* TMQTelephony.framework */; };
 		03D982A81E6371E300BF8450 /* TMQTelephony.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 03D982A61E6371E300BF8450 /* TMQTelephony.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		03D982AD1E63732700BF8450 /* TwilioVoiceClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03D982AC1E63732700BF8450 /* TwilioVoiceClient.framework */; };
-		03D982AE1E63732700BF8450 /* TwilioVoiceClient.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 03D982AC1E63732700BF8450 /* TwilioVoiceClient.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		03D982B01E6375D300BF8450 /* CleanroomLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03D982AF1E6375D300BF8450 /* CleanroomLogger.framework */; };
 		03D982B11E6375D300BF8450 /* CleanroomLogger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 03D982AF1E6375D300BF8450 /* CleanroomLogger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		03D982B31E6376C700BF8450 /* TwilioVoiceClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03D982B21E6376C700BF8450 /* TwilioVoiceClient.framework */; };
+		03D982B41E6376C700BF8450 /* TwilioVoiceClient.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 03D982B21E6376C700BF8450 /* TwilioVoiceClient.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		03F7290C1E5285A3009131AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F7290B1E5285A3009131AC /* AppDelegate.swift */; };
 		03F7290E1E5285A3009131AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F7290D1E5285A3009131AC /* ViewController.swift */; };
 		03F729111E5285A3009131AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03F7290F1E5285A3009131AC /* Main.storyboard */; };
@@ -29,8 +29,8 @@
 			dstSubfolderSpec = 10;
 			files = (
 				03D982B11E6375D300BF8450 /* CleanroomLogger.framework in Embed Frameworks */,
-				03D982AE1E63732700BF8450 /* TwilioVoiceClient.framework in Embed Frameworks */,
 				03D982A81E6371E300BF8450 /* TMQTelephony.framework in Embed Frameworks */,
+				03D982B41E6376C700BF8450 /* TwilioVoiceClient.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -41,6 +41,7 @@
 		03D982A61E6371E300BF8450 /* TMQTelephony.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TMQTelephony.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		03D982AC1E63732700BF8450 /* TwilioVoiceClient.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwilioVoiceClient.framework; path = ../Frameworks/TwilioVoiceClient.framework; sourceTree = "<group>"; };
 		03D982AF1E6375D300BF8450 /* CleanroomLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CleanroomLogger.framework; path = ../../TMQTelephony/Carthage/Build/iOS/CleanroomLogger.framework; sourceTree = "<group>"; };
+		03D982B21E6376C700BF8450 /* TwilioVoiceClient.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwilioVoiceClient.framework; path = ../../TMQTelephony/Frameworks/TwilioVoiceClient.framework; sourceTree = "<group>"; };
 		03F729081E5285A3009131AC /* TelephonyScaffolding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TelephonyScaffolding.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03F7290B1E5285A3009131AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03F7290D1E5285A3009131AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,8 +58,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				03D982B01E6375D300BF8450 /* CleanroomLogger.framework in Frameworks */,
-				03D982AD1E63732700BF8450 /* TwilioVoiceClient.framework in Frameworks */,
 				03D982A71E6371E300BF8450 /* TMQTelephony.framework in Frameworks */,
+				03D982B31E6376C700BF8450 /* TwilioVoiceClient.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +69,7 @@
 		03F728FF1E5285A3009131AC = {
 			isa = PBXGroup;
 			children = (
+				03D982B21E6376C700BF8450 /* TwilioVoiceClient.framework */,
 				03D982AF1E6375D300BF8450 /* CleanroomLogger.framework */,
 				03D982AC1E63732700BF8450 /* TwilioVoiceClient.framework */,
 				03D982A61E6371E300BF8450 /* TMQTelephony.framework */,
@@ -304,8 +306,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = B5S56929D8;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(SRCROOT)/../../TMQTelephony/Frameworks",
 					"$(SRCROOT)/../../TMQTelephony/Carthage/Build/iOS/",
+					"$(SRCROOT)/../../TMQTelephony/Frameworks",
 				);
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../TMQTelephony/Frameworks";
 				INFOPLIST_FILE = TelephonyScaffolding/Info.plist;
@@ -323,8 +325,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = B5S56929D8;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(SRCROOT)/../../TMQTelephony/Frameworks",
 					"$(SRCROOT)/../../TMQTelephony/Carthage/Build/iOS/",
+					"$(SRCROOT)/../../TMQTelephony/Frameworks",
 				);
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../TMQTelephony/Frameworks";
 				INFOPLIST_FILE = TelephonyScaffolding/Info.plist;

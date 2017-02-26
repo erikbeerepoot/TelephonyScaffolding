@@ -11,9 +11,12 @@ import TMQTelephony
 
 class ViewController: UIViewController {
 
+    let callManager = CallManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
