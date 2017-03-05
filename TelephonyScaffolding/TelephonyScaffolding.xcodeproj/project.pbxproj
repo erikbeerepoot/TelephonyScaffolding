@@ -39,9 +39,9 @@
 
 /* Begin PBXFileReference section */
 		03D982A61E6371E300BF8450 /* TMQTelephony.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TMQTelephony.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		03D982AC1E63732700BF8450 /* TwilioVoiceClient.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwilioVoiceClient.framework; path = ../Frameworks/TwilioVoiceClient.framework; sourceTree = "<group>"; };
 		03D982AF1E6375D300BF8450 /* CleanroomLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CleanroomLogger.framework; path = ../../TMQTelephony/Carthage/Build/iOS/CleanroomLogger.framework; sourceTree = "<group>"; };
 		03D982B21E6376C700BF8450 /* TwilioVoiceClient.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwilioVoiceClient.framework; path = ../../TMQTelephony/Frameworks/TwilioVoiceClient.framework; sourceTree = "<group>"; };
+		03D982B61E637C1300BF8450 /* TelephonyScaffolding.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TelephonyScaffolding.entitlements; sourceTree = "<group>"; };
 		03F729081E5285A3009131AC /* TelephonyScaffolding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TelephonyScaffolding.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03F7290B1E5285A3009131AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03F7290D1E5285A3009131AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,13 +66,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		03F728FF1E5285A3009131AC = {
+		03D982B51E63777500BF8450 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				03D982B21E6376C700BF8450 /* TwilioVoiceClient.framework */,
 				03D982AF1E6375D300BF8450 /* CleanroomLogger.framework */,
-				03D982AC1E63732700BF8450 /* TwilioVoiceClient.framework */,
 				03D982A61E6371E300BF8450 /* TMQTelephony.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		03F728FF1E5285A3009131AC = {
+			isa = PBXGroup;
+			children = (
+				03D982B51E63777500BF8450 /* Frameworks */,
 				03F7290A1E5285A3009131AC /* TelephonyScaffolding */,
 				03F729091E5285A3009131AC /* Products */,
 			);
@@ -89,6 +96,7 @@
 		03F7290A1E5285A3009131AC /* TelephonyScaffolding */ = {
 			isa = PBXGroup;
 			children = (
+				03D982B61E637C1300BF8450 /* TelephonyScaffolding.entitlements */,
 				03F7290B1E5285A3009131AC /* AppDelegate.swift */,
 				03F7290D1E5285A3009131AC /* ViewController.swift */,
 				03F7290F1E5285A3009131AC /* Main.storyboard */,
@@ -133,10 +141,13 @@
 				TargetAttributes = {
 					03F729071E5285A3009131AC = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = B5S56929D8;
+						DevelopmentTeam = 4249B52DLC;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
 								enabled = 1;
 							};
 						};
@@ -304,7 +315,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = B5S56929D8;
+				CODE_SIGN_ENTITLEMENTS = TelephonyScaffolding/TelephonyScaffolding.entitlements;
+				DEVELOPMENT_TEAM = 4249B52DLC;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SRCROOT)/../../TMQTelephony/Carthage/Build/iOS/",
 					"$(SRCROOT)/../../TMQTelephony/Frameworks",
@@ -313,7 +325,7 @@
 				INFOPLIST_FILE = TelephonyScaffolding/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks $(SRCROOT)/../../TMQTelephony/Carthage/Build/iOS/";
 				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../../TMQTelephony/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.barefootsystems.TelephonyScaffolding;
+				PRODUCT_BUNDLE_IDENTIFIER = com.barefootsystems.telephonyscaffoldingapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -323,7 +335,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = B5S56929D8;
+				CODE_SIGN_ENTITLEMENTS = TelephonyScaffolding/TelephonyScaffolding.entitlements;
+				DEVELOPMENT_TEAM = 4249B52DLC;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SRCROOT)/../../TMQTelephony/Carthage/Build/iOS/",
 					"$(SRCROOT)/../../TMQTelephony/Frameworks",
@@ -332,7 +345,7 @@
 				INFOPLIST_FILE = TelephonyScaffolding/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks $(SRCROOT)/../../TMQTelephony/Carthage/Build/iOS/";
 				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../../TMQTelephony/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.barefootsystems.TelephonyScaffolding;
+				PRODUCT_BUNDLE_IDENTIFIER = com.barefootsystems.telephonyscaffoldingapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
