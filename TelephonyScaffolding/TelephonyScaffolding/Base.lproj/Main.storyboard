@@ -101,8 +101,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Incoming calls:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O9y-QS-a39">
-                                <rect key="frame" x="17" y="25" width="114" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Call status:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O9y-QS-a39">
+                                <rect key="frame" x="17" y="25" width="85" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -112,8 +112,11 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
+                        <outlet property="acceptCall" destination="IaK-Ub-PTy" id="3ji-bs-tjp"/>
                         <outlet property="callDuration" destination="SRW-BV-wOS" id="ncD-yA-1gF"/>
+                        <outlet property="endCall" destination="0ms-kc-mP7" id="M0K-iG-9Y3"/>
                         <outlet property="status" destination="t3N-3V-pRP" id="3vt-F4-T8l"/>
+                        <outlet property="testCall" destination="365-I3-ZUK" id="pJs-SW-2XD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
